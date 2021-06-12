@@ -17,5 +17,12 @@ def translate(word):
             return "We don't understand, Try Again!"       
     else:
         return "The word does not exist. Please double check it."
+
 word = input("Enter word:")
-print(translate(word))
+
+output=(translate(word))
+if type(output)==list :
+    for out in output:
+        print(out)
+else:
+    print(output)        
